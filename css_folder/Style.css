@@ -1,0 +1,567 @@
+/* Style for background size and position */
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* declaring the minimum value for width and height so that the background picture will adapt to every screen resolutions */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* style for the navigation bar */
+.navigation_container {
+    background-color: rgb(19, 21, 27);
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    /* push it the navigation menus on the right side of the navigation bar */
+    text-align: right;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* style for the contents in the navigation bar */
+.navigation_container a {
+    display: inline-flex;
+    padding: 14px 16px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.938);
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* style for the navigation bar when the user will pass the cursor on it */
+.navigation_container a:hover {
+    color: rgb(255, 253, 253);
+    cursor: pointer;
+    border-bottom: solid rgb(69, 66, 221);
+    border-top: solid rgb(69, 66, 221);
+}
+
+/* style for the navigation bar when we are in a specific page, the back ground of that specific page will be different from others */
+.selected {
+    background-color: rgb(69, 66, 221);
+}
+
+/* style for the logo that can be seen in the left side of the navigation bar */
+.website_logo {
+    width: 50px;
+    position: absolute;
+    left: 3%;
+}
+
+/* style for the footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background-color: rgb(19, 21, 27);
+    color: white;
+    text-align: center;
+}
+
+/* style for the body in the home page, where it is divided into 2 sections */
+.split {
+    position: absolute;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* style for the body in the home page, the left side */
+.left_side{
+    left: 0;
+    height: 87%;
+    width: 65%;
+    margin-top: 40px;
+}
+
+/* style for the body in the home page, the right side */
+.right_side {
+    position: fixed;
+    right: 0;
+    height: 87%;
+    width: 45%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* style for the animation in the home page */
+.homepage_animation {
+    position: absolute;
+    top:10%;
+    width: 45%;
+    height: 75%;
+    margin: 5%;
+    margin-left: 15%;
+}
+
+/* style of the boxes to display texts */
+.box_shadow {
+    /* shadows of the boxes */
+    -moz-box-shadow: 5px 5px 5px 5px #777777;
+    -webkit-box-shadow: 5px 5px 5px 5px #777777;
+    box-shadow: 5px 5px 5px 5px #777777;
+    margin: 6%;
+    padding: 20px;
+    text-align: justify;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: #fff;
+    width: 600px;
+    top:5%;
+    left: 30px;
+    position: relative;
+}
+
+/* style for the button in the home page */
+.btn {
+    font-weight: bold;
+    font-size: 100%;
+    width: 18%;
+    left: 10%;
+    margin-left: 20px;
+    margin: 2%;
+    padding: 12px 16px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(7, 7, 14, 0.246);
+}
+
+/* style for the button in the home page in case the cursor pass through the buttons */
+.btn:hover {
+    background-color: rgb(19, 21, 27);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* style for the form box for login and registration which is located in the login page */
+.form-box {
+    width: 500px;
+    height: 800px;
+    position: relative;
+    margin: 80px;
+    top: 15px;
+    left: 30%;
+    background: rgba(19, 21, 27, 0.808);
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+/* style for the login and registration toggle button */
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    left: 20%;
+    margin-top: 5%;
+    color: white;
+    font-size: 18px;
+}
+
+/* style for the login and registration button */
+#btn {
+    margin-left: 20%;
+    margin-top: 8%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 120px;
+    height: 6%;
+    background: rgb(69, 66, 221);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+/* style for the form control box */
+.form_control {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* style for the form control for the input fields */
+.form_control input {
+    width: 100%;
+    padding: 15px ;
+    /* margin: 35px ; */
+    /* margin-bottom: 15px; */
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+/* style for the form control for the input field when the entered data will follow the requirements  */
+.form_control.success input {
+    border-bottom: 3px solid green;
+}
+
+/* style for the form control for the input field when the entered data will not follow the requirements  */
+.form_control.error input {
+    border-bottom: 3px solid red;
+}
+
+/* style for the form control for the icons */
+.form_control i{
+    position: absolute;
+    right:8%;
+    top: 28px;
+    visibility: hidden;
+}
+
+/* style for the form control icon when the entered data will follow the requirements  */
+.form_control.success i.fa-check-circle{
+    color: green;
+    visibility: visible;
+}
+
+/* style for the form control icon when the entered data will not follow the requirements  */
+.form_control.error i.fa-exclamation-circle{
+    color: red;
+    visibility: visible;
+}
+
+/* style for the form control for the error message when the entered data will not follow the requirements  */
+.form_control small {
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    visibility: hidden;
+}
+.form_control.error small {
+    visibility: visible;
+}
+
+/* style for the input in the login section */
+.input-group-login {
+    top: 180px;
+    position: absolute;
+    width: 380px;
+    transition: .5s;
+}
+
+/* style for the input in the registration section */
+.input-group-register {
+    top: 100px;
+    position: absolute;
+    width: 380px;
+    transition: .5s;
+}
+
+/* style for the submit button for the login section*/
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: rgb(69, 66, 221);
+    border: 0;
+    outline: none;
+    margin-top: 20%;
+    border-radius: 30px;
+    color: white;
+}
+
+/* style for the submit button for the registration section*/
+.submit-btn_registration {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: rgb(69, 66, 221);
+    border: 0;
+    outline: none;
+    margin-top: 5%;
+    border-radius: 30px;
+    color: white;
+}
+
+/* style for the submit button when the cursor will pass through it */
+.submit-btn:hover {
+    width: 100%;
+    background-color: rgb(69, 66, 221);
+}
+
+/* style for the submit button when the cursor will pass through it */
+.submit-btn_registration:hover {
+    width: 100%;
+    background-color: rgb(69, 66, 221);
+}
+
+/* style for the login section */
+#login {
+    left: 50px;
+}
+
+/* style for the registration section */
+#register {
+    left: 750px;
+}
+
+/* style for the instruction in the login and registration section */
+.form_text {
+    color:white; 
+    text-align:center; 
+    cursor:pointer
+}
+
+/* style for the animation in the how to play page */
+.how-to-play_animation {
+    position: absolute;
+    right: 180px;
+    top: 20%;
+    width: 30%;
+    height: 60%;
+}
+
+/* style for the text box in how to play page and game page */
+.box {
+    margin-top: 7%;
+    padding: 20px;
+    text-align: justify;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: #fff;
+    width: 700px;
+    left: 120px;
+    position: relative;
+}
+
+/* style for the play button in how-to-play page and game page */
+.button_play {
+    background: transparent;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 55px;
+    border-radius: 37px;
+    border-color: rgb(19, 21, 27);
+    border-width: 10px;
+}
+
+/* style for the play button in how-to-play page and game page when the cursor will pass through it */
+.button_play:hover {
+    background: rgb(249, 249, 250);
+    border: none;
+    padding: 5px;
+}
+
+/* style for the high score button in how-to-play page and game page */
+.button_highscore {
+    background: transparent;
+    position: relative;
+    margin-left: 5%;
+    border-radius: 37px;
+    border-color: rgb(19, 21, 27);
+    border-width: 10px;
+    padding: 10px;
+}
+
+/* style for the high score button in how-to-play page and game page when the cursor will pass through it */
+.button_highscore:hover {
+    background: rgb(236, 236, 240);
+    border: none;
+    padding: 15px;
+}
+
+/* style for the contents in the leaderboard table */
+.container {
+    max-width: 45%;
+    padding-right: 10px;
+    position: absolute;
+    color: white;
+    border-radius: 15px;
+    /* putting the content in the middle of the page */
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    font-style: oblique;
+}
+
+/* style for the heading 1 type */
+h1 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+    font-style: oblique;
+    font-size: 50px;
+    text-shadow: black 1px 0 10px;
+    margin-top: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+/* style for the output in the leaderboard */
+li {
+    background-color: rgb(19, 21, 27);
+    border-radius: 15px;
+    padding: 20px 13px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-right: 40px;    
+}
+
+/* style for the leaderboard table's header */
+.table-header {
+    background-color: #95A5A6;
+    font-size: 16px;
+    text-transform: uppercase;
+    font: bolder;
+    color:black;
+}
+
+/* style for the columns in the table */
+.column, .col{
+    flex-basis: 100%;
+    display: flex;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+/* style for the 1st column of the table which is the rank one*/
+.column-1, .col-1  {
+    flex-basis: 10%;
+}
+
+/* style for the 2nd column of the table which is the first name one*/
+.column-2, .col-2 {
+    flex-basis: 20%;
+}
+
+/* style for the 3rd column of the table which is the surname one*/
+.column-3, .col-3 {
+    flex-basis: 20%;
+}
+
+/* style for the 4th column of the table which is the score one*/
+.column-4, .col-4 {
+    flex-basis: 20%;
+}
+
+/* style for the contact box */
+.contact {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* style for the contents in the contact box */
+.contact_details {
+    border: 5px solid white;
+    position: relative;
+    margin: 0%;
+    margin-top: 10%;
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-5%);
+}
+
+/* game section */
+/* style for the game area in the game page */
+#container_game {
+    position: absolute;
+    width: 1000px;
+    height: 700px;
+    top: 20%;
+    left: 45%;
+    background-color: rgb(143, 125, 25);
+    overflow: hidden;
+    /* background-image: url(../images_folder/Game_Container.png); */
+    background-position: center;
+    background-size: cover;
+}
+
+/* style for the option button displaying the different level of difficulties */
+.option_box {
+    width:40%;
+    text-align: center;
+    margin-left: 30%;
+    padding-right: 10%;
+}
+
+/* style of the dashboard */
+.dashBoard {
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    left: 1150px;
+    top: 12%;
+    padding-left:7%;
+    padding-right:7%;
+}
+
+/* style for the road in the game */
+.road {
+    position: absolute;
+    height: 155px;
+    width: 250px;
+    top:0;
+    left: 320px;
+    text-align: center;
+    color: white;
+    background-color: #444;
+    border-radius: 2px;
+}
+
+/* style for the road */
+.road:before{
+    content: '|||';
+    letter-spacing: 100px;
+    vertical-align: top;
+    color:white;
+    width:4px;
+    height:10px;
+    line-height: 30px;
+    left:23%;
+    position: absolute;
+}
+
+/* style for enemy cars */
+.enemy {
+    position: absolute;
+    height: 80px;
+    width:40px;
+    top:0px;
+    left:0px;
+    border-radius: 5px;
+    background-image: url(../images_folder/car2.png);
+    background-size: cover;
+    z-index: 99;
+    text-align: center;    
+}
+
+/* style for the player's car */
+.playerCar {
+    position: absolute;
+    height: 80px;
+    width: 40px;
+    bottom: 60px;
+    margin-left:250px;
+    border-radius: 5px;
+    background-image: url(../images_folder/car1.png);
+    background-size: cover;
+    z-index: 100;
+}
